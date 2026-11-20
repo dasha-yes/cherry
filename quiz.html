@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест — Cherry</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Cherry</h1>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="breeds.html">Породы</a>
+        <a href="quiz.html">Тест</a>
+    </nav>
+</header>
+
+<main>
+    <h2>Подойдёт ли тебе кошка? </h2>
+    <p>Ответь на несколько вопросов, чтобы оценить, сможешь ли ты обеспечить кошке комфортную жизнь.</p>
+
+    <form id="catQuiz">
+
+        <h3>1. Где ты живёшь?</h3>
+        <label><input type="radio" name="home" value="own" required> В собственной квартире или доме</label>
+
+        <label><input type="radio" name="home" value="rent"> В съёмном жилье</label>
+
+        <label><input type="radio" name="home" value="other"> В общежитии или другом месте</label>
+
+        <h3>2. Есть ли дома дети?</h3>
+        <label><input type="radio" name="children" value="no" required> Нет</label>
+
+        <label><input type="radio" name="children" value="yes"> Да</label>
+
+        <h3>3. Есть ли у тебя другие животные?</h3>
+        <label><input type="radio" name="pets" value="no" required> Нет</label>
+
+        <label><input type="radio" name="pets" value="cat"> Есть кошка</label>
+
+        <label><input type="radio" name="pets" value="dog"> Есть собака</label>
+
+        <label><input type="radio" name="pets" value="other"> Другие животные</label>
+
+        <h3>4. Есть ли у кого-нибудь из домашних аллергия на кошек?</h3>
+        <label><input type="radio" name="allergy" value="no" required> Нет</label>
+
+        <label><input type="radio" name="allergy" value="yes"> Да</label>
+
+        <label><input type="radio" name="allergy" value="unknown"> Не знаю</label>
+
+        <h3>5. Сколько времени кошка будет оставаться одна?</h3>
+        <label><input type="radio" name="time" value="little" required> До 4 часов</label>
+
+        <label><input type="radio" name="time" value="medium"> От 4 до 8 часов</label>
+
+        <label><input type="radio" name="time" value="long"> Более 8 часов</label>
+
+        <h3>6. Готов ли ты регулярно оплачивать содержание кошки?</h3>
+        <label><input type="radio" name="money" value="yes" required> Да, включая корм, наполнитель и ветеринара</label>
+
+        <label><input type="radio" name="money" value="no"> Пока нет</label>
+
+        <h3>7. Все ли члены семьи согласны с появлением кошки?</h3>
+        <label><input type="radio" name="family" value="yes" required> Да</label>
+
+        <label><input type="radio" name="family" value="no"> Нет</label>
+
+        <label><input type="radio" name="family" value="alone"> Я живу один/одна</label>
+
+        <h3>8. Сможешь ли ты обеспечить кошке безопасное пространство?</h3>
+        <label><input type="radio" name="safety" value="yes" required> Да, включая защиту окон</label>
+
+        <label><input type="radio" name="safety" value="no"> Пока нет</label>
+
+        
+
+        <button type="submit">Узнать результат ♡</button>
+
+    </form>
+
+    <div id="result"></div>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
